@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Hackerz 2.17</title>
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" href="css/style1.css" />
+<link rel="stylesheet" href="css/video.css" />
+<link rel='shortcut icon' href='images/logo2.ico' type='image/x-icon'/ >
+<style>
+body { 
+    background-image: url('images/jb5.jpg');
+    background-color:black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>
+</head>
+<body   style="margin:0;" oncontextmenu="return false;">
+<div style="position:absolute;top:30px;left:10px">
+<img src="images/jb21.gif" height="200px" width="200px"/></div>
+<div style="position:absolute;top:60px;left:40px">
+<img src="images/CITlogo.png" height="100px" width="100px"/></div>
+<div style="position:absolute;top:60px;right:40px">
+<a href="http://hackerz2k17.co.in"><img src="images/logo.png" height="150px" width="100px"/></a>
+</div>
+
+ <div id="load"></div>
+<div id="contents" style="position:absolute;top:350px;left:100px">
+<a href="technical.html" class="button alt" id="logo">Technical
+</a>
+         
+    </div>
+<div id="contents" style="position:absolute;top:30px;left:520px">
+<font color="white" size="40"><h1>Events</h1></font>
+</div>
+<div id="contents" style="position:absolute;top:350px;left:800px">
+
+       <a href="nontechnical.html" class="button alt" id="logo">Non-Technical
+</a>
+    </div>
+
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="basu.jpg" class="fullscreen-bg__video">
+      
+        <source src="video/events.mp4" type="video/mp4">
+       
+    </video>
+</div>
+
+<audio src="Music/jb_events.mp3" autoplay>
+<p>Music by Jothibasu</p>
+<embed src="Music/jb_events.mp3" width="180" height="90" hidden="true" />
+</audio>
+
+
+<!-- particles.js container -->
+
+<div id="particles-js"></div>
+
+
+<!-- scripts -->
+
+<script src="js/particles.js">
+</script>
+<script src="js/app.js">
+</script>
+
+<script>
+ 
+ var count_particles, stats, update;
+  
+stats = new Stats;
+ 
+ stats.setMode(0);
+
+  stats.domElement.style.position = 'absolute';
+ 
+ stats.domElement.style.left = '0px';
+ 
+ stats.domElement.style.top = '0px';
+ 
+ document.body.appendChild(stats.domElement);
+ 
+ count_particles = document.querySelector('.js-count-particles');
+
+  update = function() {
+    stats.begin();
+    stats.end();
+    
+if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array)
+ {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+  
+  requestAnimationFrame(update);
+  };
+
+  requestAnimationFrame(update);
+
+</script>
+
+
+
+<script>
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },13000);
+  }
+}
+</script>
+
+</body>
+</html>

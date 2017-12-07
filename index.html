@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Hackerz 2.17</title>
+<link rel="stylesheet" type="text/css" href="css/mainpage.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/video.css">
+<link rel="stylesheet" type="text/css" href="css/overlay.css">
+<link rel='shortcut icon' href='images/logo2.ico' type='image/x-icon'/ >
+</head>
+<body   style="margin:0;" oncontextmenu="return false;">
+ <div id="load"></div>
+<!--<div id="contents" style="position:absolute;top:130px;left:700px">
+
+         <div class="cssload-loader">Hackerz <marquee >2.17</marquee></div>
+    </div>-->
+
+<div class="fullscreen-bg">
+    <video loop muted autoplay poster="basu.jpg" class="fullscreen-bg__video">
+      
+        <source src="video/hackerj1.mp4" type="video/mp4">
+       
+    </video>
+</div>
+
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="home.html">Home</a></br>
+    <a href="technical.html">Technical Events</a></br>
+    <a href="nontechnical.html">Non-Technical Events</a></br>
+    <a href="https://goo.gl/forms/T0X0TDAlgoenTOy82">Register</a></br>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+
+
+<div style="position:absolute;right:30px;top:30px;">
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Menu</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<audio src="Music/anony.mp3" autoplay>
+<p>Music by Jothibasu</p>
+<embed src="Music/anony.mp3" width="180" height="90" hidden="true" />
+</audio>
+
+
+<!--<div style="position:absolute;bottom:30px;right:40px">
+<img src="images/basu1.gif" /></div>-->
+<div style="position:absolute;top:10px;left:400px">
+<img src="images/cit.png" height="100px" /></div>
+<div style="position:absolute;top:520px;left:575px">
+<a href="home.html"><button class="button"><span>Let's Hack</span></button></a>
+</div>	
+
+<div style="position:absolute;bottom:30px;left:40px">
+<a href="contact.html"><img src="images/contact.png" height="80px" width="80px" /></a></div>
+
+<!-- particles.js container -->
+
+<div id="particles-js"></div>
+
+
+<!-- scripts -->
+
+<script src="js/particles.js">
+</script>
+<script src="js/app.js">
+</script>
+
+<script>
+ 
+ var count_particles, stats, update;
+  
+stats = new Stats;
+ 
+ stats.setMode(0);
+
+  stats.domElement.style.position = 'absolute';
+ 
+ stats.domElement.style.left = '0px';
+ 
+ stats.domElement.style.top = '0px';
+ 
+ document.body.appendChild(stats.domElement);
+ 
+ count_particles = document.querySelector('.js-count-particles');
+
+  update = function() {
+    stats.begin();
+    stats.end();
+    
+if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array)
+ {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+  
+  requestAnimationFrame(update);
+  };
+
+  requestAnimationFrame(update);
+
+</script>
+
+
+
+<script>
+document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('contents').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('load').style.visibility="hidden";
+         document.getElementById('contents').style.visibility="visible";
+      },4000);
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+#jb {
+ height:680px;
+ width:1330px;
+ margin:0 auto; 
+position:relative; 
+z-index:10; 
+display:none;
+ background: url(../images/green.jpg) 
+no-repeat  ;
+background-size:cover;
+ border:5px solid #cccccc; 
+border-radius:10px;
+ } 
+#jb:target, #loginScreen:target + #cover{ 
+display:block; 
+opacity:2; 
+}
+
+#jb1 {
+ height:680px;
+ width:1330px;
+ margin:0 auto; 
+position:relative; 
+z-index:10; 
+display:none;
+ background: url(../images/green.jpg) 
+no-repeat  ;
+background-size:cover;
+ border:5px solid #cccccc; 
+border-radius:10px;
+ } 
+#jb1:target, #loginScreen:target + #cover{ 
+display:block; 
+opacity:2; 
+}
+
+#jb2 {
+ height:680px;
+ width:1330px;
+ margin:0 auto; 
+position:relative; 
+z-index:10; 
+display:none;
+ background: url(../images/green.jpg) 
+no-repeat  ;
+background-size:cover;
+ border:5px solid #cccccc; 
+border-radius:10px;
+ } 
+#jb2:target, #loginScreen:target + #cover{ 
+display:block; 
+opacity:2; 
+}
+
+#jb3 {
+ height:680px;
+ width:1330px;
+ margin:0 auto; 
+position:relative; 
+z-index:10; 
+display:none;
+ background: url(../images/green.jpg) 
+no-repeat  ;
+background-size:cover;
+ border:5px solid #cccccc; 
+border-radius:10px;
+ } 
+#jb3:target, #loginScreen:target + #cover{ 
+display:block; 
+opacity:2; 
+}
+
+#jb4 {
+ height:680px;
+ width:1330px;
+ margin:0 auto; 
+position:relative; 
+z-index:10; 
+display:none;
+ background: url(../images/green.jpg) 
+no-repeat  ;
+background-size:cover;
+ border:5px solid #cccccc; 
+border-radius:10px;
+ } 
+#jb4:target, #loginScreen:target + #cover{ 
+display:block; 
+opacity:2; 
+}
+
+#jb5 {
+ height:680px;
+ width:1330px;
+ margin:0 auto; 
+position:relative; 
+z-index:10; 
+display:none;
+ background: url(../images/green.jpg) 
+no-repeat  ;
+background-size:cover;
+ border:5px solid #cccccc; 
+border-radius:10px;
+ } 
+#jb5:target, #loginScreen:target + #cover{ 
+display:block; 
+opacity:2; 
+}
+
+#jb6 {
+ height:680px;
+ width:1330px;
+ margin:0 auto; 
+position:relative; 
+z-index:10; 
+display:none;
+ background: url(../images/green.jpg) 
+no-repeat  ;
+background-size:cover;
+ border:5px solid #cccccc; 
+border-radius:10px;
+ } 
+#jb6:target, #loginScreen:target + #cover{ 
+display:block; 
+opacity:2; 
+}
+
+.cancel
+{
+    display:block;
+    position:absolute;
+    top:3px;
+    right:2px;
+    background:rgb(245,245,245);
+    color:black;
+    height:30px;
+    width:35px;
+    font-size:30px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+}
